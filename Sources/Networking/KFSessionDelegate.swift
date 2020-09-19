@@ -1,5 +1,5 @@
 //
-//  SessionDelegate.swift
+//  KFSessionDelegate.swift
 //  Kingfisher
 //
 //  Created by Wei Wang on 2018/11/1.
@@ -27,7 +27,7 @@
 import Foundation
 
 // Represents the delegate object of downloader session. It also behave like a task manager for downloading.
-class SessionDelegate: NSObject {
+class KFSessionDelegate: NSObject {
 
     typealias SessionChallengeFunc = (
         URLSession,
@@ -138,7 +138,7 @@ class SessionDelegate: NSObject {
     }
 }
 
-extension SessionDelegate: URLSessionDataDelegate {
+extension KFSessionDelegate: URLSessionDataDelegate {
 
     func urlSession(
         _ session: URLSession,
